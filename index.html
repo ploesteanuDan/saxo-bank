@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saxo Bank</title>
     <!-- You can link your CSS stylesheets here -->
@@ -9,8 +10,39 @@
 </head>
 <body>
     <!-- Your content goes here -->
-    <h1>Welcome to My Basic HTML Page</h1>
-    <p>This is a simple HTML page.</p>
+    <div className="hero">
+        <div className="logo">
+          <img src="" />
+        </div>
+        <div className="text">
+          <div className="title">
+            <p className="dark">What does the</p>
+            <p className="light">future hold</p>
+            <p className="dark">?</p>
+          </div>
+          <p className="paragraph">
+            The global financial landscape continues to evolve, presenting new challenges and opportunities. At
+            <mark className="bold">
+              {" "}FX
+            </mark>
+            <mark className="orange">
+              ORO
+            </mark>
+            , we understand that staying ahead in these dynamic times requires not just adaptability, but also a deep understanding of the underlying trends shaping our economic future.
+  
+          </p>
+        </div>
+        <div className='cta'>
+          <button>Learn more</button>
+          <div className='warning'>
+            <p>Trading is risky.</p>
+            <p>You may lore your entire capital.</p>
+          </div>
+        </div>
+        <div className='image-container'>
+          <img src="" className='bg-image' />
+        </div>
+      </div>
 
     <!-- Your JavaScript scripts can go here -->
     <script src="scripts.js"></script>

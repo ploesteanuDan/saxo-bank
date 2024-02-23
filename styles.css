@@ -1,0 +1,39 @@
+:root {
+  --white: white;
+  --black: black;
+  --dark-blue: black;
+  --light-blue: black;
+  --yellow: black;
+  --orange: black;
+}
+
+@media screen and (min-width: 1400px) {
+ .container {
+  width: 1230px;
+  margin: auto;
+ }
+}
+
+@media screen and (max-width: 1399px) {
+  .container {
+    width: calc(100% - 50px * 2);
+    margin: auto;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p, h1 {
+  margin: 0;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+}
+
