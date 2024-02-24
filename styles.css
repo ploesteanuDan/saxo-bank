@@ -357,3 +357,131 @@ mark{
    }
 
  }
+
+ .go-back-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+ }
+
+ .go-back-container button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 12px;
+  padding-left: 10px;
+  width: fit-content;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: 0.3s;
+  color: rgb(0, 0, 0, 0.7);
+ }
+
+ .go-back-container button:hover{
+  background-color: rgba(39, 55, 115, 0.15);
+  color: var(--black);
+ }
+
+ .go-back-container button svg{
+  width: 16px;
+  height: 16px;
+  stroke-width: 2px;
+ }
+
+ .go-back-container button p{
+  font-size: 16px;
+  font-weight: var(--medium);
+ }
+
+ .contact-message{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+ }
+
+ form{
+  display: grid;
+  grid-template-columns: [start] 1fr [col1] 1fr [col2]  1fr [end];
+  grid-template-rows: [start] auto [row1] auto [row2] auto [row3] auto [end];
+  gap: 20px;
+}
+
+ .form-input{
+  display: flex;
+  align-items:  flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+ }
+
+ .form-input input, .form-input textarea{
+  width: 100%;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  font-size: 16px;
+ }
+
+ textarea{
+  resize: none;
+ }
+
+ .form-name{
+  grid-column-start: start;
+  grid-column-end: col1;
+  grid-row-start: start;
+  grid-row-end: row1;
+ }
+
+ .form-email{
+  grid-column-start: col1;
+  grid-column-end: col2;
+  grid-row-start: start;
+  grid-row-end: row1;
+ }
+
+ .form-phone{
+  grid-column-start: col2;
+  grid-column-end: end;
+  grid-row-start: start;
+  grid-row-end: row1;
+ }
+
+ .form-message{
+  grid-column-start: start;
+  grid-column-end: col2;
+  grid-row-start: row1;
+  grid-row-end: row3;
+ }
+
+ form .btn{
+  font-size: 16px;
+  font-weight: var(--medium);
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  height: 45px;
+ }
+
+ @media screen and (max-width: 449px) {
+
+  .contact-message p{
+    text-align: left;
+  }
+
+  form{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+  }
+
+  .form-input{
+    grid-column-start: unset;
+    grid-column-end: unset;
+    grid-row-start: unset;
+    grid-row-end: unset;
+  }
+
+ }

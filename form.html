@@ -8,13 +8,92 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Form Page</h1>
-    <form action="submit_form.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <input type="submit" value="Submit">
+    <div class="container">
+        <div class="hero-logo">
+          <img src="./assets/logo.png" class="hero-logo-img" />
+        </div>
+    </div>
+    <div class="container go-back-container">
+        <button class="go-back-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>              
+            <p>Back to FXORO</p>
+        </button>
+    </div>
+    <div class="container contact-message">
+        <h2>
+            Contact Us</h2>
+        <p>
+            Please fill out the form below to get in touch with us. We value your feedback and inquiries.
+            Trading involves risks, and it's important to read and agree to our terms and conditions before proceeding.
+        </p>
+    </div>
+    <form id="contactForm" class="container">
+        <div class="form-input form-name">
+            <label for="fullName">Name:</label>
+            <input type="text" id="fullName" name="fullName" required>   
+        </div>
+        <div class="form-input form-email">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-input form-phone">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required>
+        </div>
+        <div class="form-input form-country">
+            <label for="country">Country of Residence:</label>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <!-- Populate options dynamically or hard-code options based on requirements -->
+                <option value="USA">United States</option>
+                <option value="UK">United Kingdom</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="form-input form-message">
+            <label for="message">Message/Enquiry:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-compliance">
+            <input type="checkbox" id="complianceCheck" name="complianceCheck" required>
+        <label for="complianceCheck">I acknowledge and agree to the terms and conditions.</label>
+        </div>
+        <input type="submit" value="Submit" class="btn">
     </form>
+    <div class="footer container">
+        <p class="footer-line">
+          This website is under the operation of MCA Intelifunds Ltd, trading as FXORO.
+        </p>
+        <p class="footer-line">
+          MCA INTELIFUNDS LTD, trading as “FXORO”, is a financial services company incorporated and registered under the laws of the Republic of Cyprus, licensed and regulated by the Cyprus Securities and Exchange Commission (CySEC) with license number 126/10.
+        </p>
+        <p class="footer-line">
+          Address: Petrou Tsirou 82, Mesa Geitonia, 3076, Limassol, Cyprus.
+        </p>
+        <p class="footer-line">
+          Clients funds are held in segregated accounts and insured by the client compensation funds subject to eligibility.
+        </p>
+        <p class="footer-line">
+          Risk disclaimer
+        </p>
+        <p class="footer-line">
+          CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 75.28% of retail investor accounts lose money when trading CFDs with this provider. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.
+        </p>
+        <p class="footer-line">
+          The National Securities Market commission of Spain (the “CNMV”) has determined that, due to the complexity of CFDs and the risks involved, the purchase of such a product by Retail Clients is not appropriate/suitable. In this respect, pursuant to the relevant requirements introduced by CNMV, you are warned that you are about to purchase a product that is complex and difficult to understand: Contracts for Differences (CFDs). CNMV has determined that, due to its complexity and the risks involved, the purchase of this product by retail investors is not appropriate/suitable.
+        </p>
+        <p class="footer-line">
+          Because of such, CFDs may not be the ideal investment for everyone. The high rate of leverage that is available to CFD traders can work for or against you. You should only invest money that you can afford to lose. CFDs are intricate leveraged financial assets. Trading Forex, Commodities, Indexes and Shares based CFDs, or any other underlaying instruments of the Company implies a high degree of risk and can lead to the loss of your investment. Before getting involved with trading, consider your financial goals, your skills and gage the possible risks associated with trading Company’s Products. Derivate assets like CFDs and likely instruments from other markets can present extreme volatility. CFDs may shift price rapidly and may depict change in market conditions that result from unforeseeable occurrences. None of these facts can be manipulated by either you or FXORO. It is best to consult with a licensed financial counselor. FXORO does not avail its customers with financial advice and the information provided herein is intended for marketing purposes only. Past performance is not an indicator for future results. Make sure to read the "Risk Warning" to get a clear picture of the risks inherent with trading Company’s Products.
+        </p>
+        <p class="footer-line">
+          MCA Intelifunds Limited does not offer Contracts for Difference to residents of certain jurisdictions such as the United States of America, the Islamic Republic of Iran and Canada.
+        </p>
+        <p class="footer-line">
+          2023 FXORO All rights reserved
+        </p>
+      </div>
+      <script src="scripts.js"></script>
 </body>
 </html>
