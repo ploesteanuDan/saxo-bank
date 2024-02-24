@@ -52,8 +52,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-p, h1 {
+p, h1, h2 {
   margin: 0;
+}
+
+h2{
+  color: var(--dark-blue);
+  font-weight: var(--black-weight);
+  font-size: 25px;
 }
 
 button{
@@ -127,4 +133,64 @@ mark{
 .hero-cta p{
   font-size: 12px;
   text-align: center;
+}
+
+.section-statement{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px
+}
+
+.section-statement p{
+  font-size: 18px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 1230px;
+  padding: 20px calc((100% - 1230px)/2);
+  gap: 50px;
+}
+
+.grid-blue{
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.grid-white{
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+
+.grid-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.grid-item img{
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.grid-item-index{
+  font-weight: var(--black-weight);
+  font-size: 25px;
+}
+
+.grid-item-title{
+  font-weight: var(--black-weight);
+  font-size: 18px;
+  color: var(--yellow);
+  margin-bottom: 20px;
+}
+
+.grid-item-description{
+  font-weight: var(--medium);
+  font-size: 16px;
 }
