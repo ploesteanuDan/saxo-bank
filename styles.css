@@ -245,7 +245,7 @@ mark{
    width: 100vw;
    display: flex;
    align-items: flex-end;
-   justify-content: center;
+   justify-content: flex-end;
    position: absolute;
    left: 0;
    top: 0;
@@ -253,43 +253,71 @@ mark{
   }
  
   .hero-image-container img{
-   width: 100%;
+   /* width: 100%; */
+   max-height: calc(100% - 20px);
   }
  
  }
  
  @media screen and (max-width: 1399px) and (min-width: 768px) {
-   .container {
+   
+  .container {
      width: calc(100% - 50px * 2);
      padding: 20px 50px;
      margin: auto;
    }
+
    .grid{
     width: calc(100% - 50px * 2);
     padding: 20px 50px;
   }
+
  }
 
  @media screen and (max-width: 767px) {
+
   .container {
     width: calc(100% - 20px * 2);
-    padding: 0 20px;
+    padding: 20px 20px;
     margin: auto;
+    text-align: center;
   }
+
   .grid{
+    padding: 20px 20px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
+    text-align: center;
   }
+
+  .hero-logo{
+    width: 100%;
+  }
+  
+  .hero-cta{
+    width: 100%;
+  }
+
   .hero-image-container{
     height: 100%;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     display: relative;
-    left: -50px;
    }
+
    .hero-image-container img{
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100%;
    }
+
+   .commitment{
+    align-items:  center;
+   }
+
+   .commitment-flex{
+    flex-direction: column;
+   }
+
  }
